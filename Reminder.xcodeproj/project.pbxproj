@@ -15,6 +15,7 @@
 		4118A4542758212E0075E5EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4118A4522758212E0075E5EE /* LaunchScreen.storyboard */; };
 		4146EAB8275AAAE300C0B3D8 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4146EAB7275AAAE300C0B3D8 /* DetailVC.swift */; };
 		414B753B275AB33D00318A58 /* ReminderInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414B753A275AB33D00318A58 /* ReminderInfo.swift */; };
+		414B753D275B223200318A58 /* WebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414B753C275B223200318A58 /* WebVC.swift */; };
 		4174496E275955B600D2B50B /* TableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4174496D275955B600D2B50B /* TableVC.swift */; };
 		41744970275955E200D2B50B /* AddVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4174496F275955E200D2B50B /* AddVC.swift */; };
 		417449722759566000D2B50B /* ReminderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417449712759566000D2B50B /* ReminderCell.swift */; };
@@ -33,6 +34,7 @@
 		4118A4552758212E0075E5EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4146EAB7275AAAE300C0B3D8 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		414B753A275AB33D00318A58 /* ReminderInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderInfo.swift; sourceTree = "<group>"; };
+		414B753C275B223200318A58 /* WebVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebVC.swift; sourceTree = "<group>"; };
 		4174496D275955B600D2B50B /* TableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableVC.swift; sourceTree = "<group>"; };
 		4174496F275955E200D2B50B /* AddVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVC.swift; sourceTree = "<group>"; };
 		417449712759566000D2B50B /* ReminderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderCell.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				4174496F275955E200D2B50B /* AddVC.swift */,
 				417449712759566000D2B50B /* ReminderCell.swift */,
 				4146EAB7275AAAE300C0B3D8 /* DetailVC.swift */,
+				414B753C275B223200318A58 /* WebVC.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 				414B753B275AB33D00318A58 /* ReminderInfo.swift in Sources */,
 				4118A4472758212C0075E5EE /* SceneDelegate.swift in Sources */,
 				41744970275955E200D2B50B /* AddVC.swift in Sources */,
+				414B753D275B223200318A58 /* WebVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

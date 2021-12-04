@@ -8,7 +8,24 @@
 import UIKit
 import CoreData
 
-class TableVC: UITableViewController {
+class TableVC: UITableViewController, DetailVCDelegate {
+    func deleteApp(data: ReminderInfo) {
+    
+        if let item = ReminderList[data.indexRow!.row] as? Reminder {
+            let context = AppDelegate.cdContext
+                if let _ = ReminderList.firstIndex(of: item)  {
+                    context.delete(item)
+                    do {
+                        try context.save()
+                    } catch let error as NSError {
+                        print("Could not delete the item. \(error), \(error.userInfo)")
+                    }
+                }
+            readData()
+        }
+    }
+
+    
     
     var ReminderList: [NSManagedObject] = []
 
@@ -75,6 +92,30 @@ class TableVC: UITableViewController {
                 }
             }
         }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let selectedCell = ReminderList[indexPath.row]
+        let reminderinfo = ReminderInfo()
+        reminderinfo.title = selectedCell.value(forKey: "title") as? String
+        reminderinfo.describe = selectedCell.value(forKey: "describe") as? String
+        reminderinfo.date = selectedCell.value(forKey: "date") as? Date
+        reminderinfo.priority = selectedCell.value(forKey: "priority") as? Int
+        reminderinfo.url = selectedCell.value(forKey: "link") as? String
+        reminderinfo.category = selectedCell.value(forKey: "category") as? Int
+        reminderinfo.indexRow = indexPath
+        tableView.deselectRow(at: indexPath, animated: true)
+        performSegue(withIdentifier: "ToDetail", sender: reminderinfo)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.destination is DetailVC {
+            let vc = segue.destination as? DetailVC
+            vc?.reminderInfo = sender as? ReminderInfo
+            vc?.delegate = self
+        }
+    }
     
     func deleteItem(item: Reminder) {
             let context = AppDelegate.cdContext
