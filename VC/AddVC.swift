@@ -21,10 +21,9 @@ class AddVC: UIViewController {
     @IBOutlet weak var URLLabel: UILabel!
     @IBOutlet weak var URLTextField: UITextField!
     @IBOutlet weak var CancelButton: UIButton!
-    @IBOutlet weak var SaveButton: UIButton!
     @IBOutlet weak var PriorityLabel: UILabel!
-    @IBOutlet weak var PriorityValue: UILabel!
-    @IBOutlet weak var PriorityStepper: UIStepper!
+    @IBOutlet weak var SaveButton: UIButton!
+    @IBOutlet weak var PriorityValue: UITextField!
     
     var priority = 0 {
         willSet{
@@ -34,13 +33,21 @@ class AddVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        ReminderTitleLabel.text = NSLocalizedString("str_AddVCTitle", comment: "")
+        ReminderDescriptionLabel.text = NSLocalizedString("str_AddVCDescription", comment: "")
+        DateLabel.text = NSLocalizedString("str_AddVCDate", comment: "")
+        CategoryLabel.text = NSLocalizedString("str_AddVCCategory", comment: "")
+        URLLabel.text = NSLocalizedString("str_AddVCURL", comment: "")
+        CancelButton.setTitle(NSLocalizedString("str_AddVCCancel", comment: ""), for: .normal)
+        SaveButton.setTitle(NSLocalizedString("str_AddVCSave", comment: ""), for: .normal)
+        PriorityLabel.text = NSLocalizedString("str_AddVCUrgency", comment: "")
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true)
     }
     
-    func saveItem(title: String, description: String, URL : String) {
+    func saveItem(title: String, description: String, URL : String, Score : String) {
         let context = AppDelegate.cdContext
         if let entity = NSEntityDescription.entity(forEntityName: "Reminder", in: context) {
             print("Yeah1")
@@ -50,7 +57,7 @@ class AddVC: UIViewController {
             item.setValue(URL, forKeyPath: "link")
             item.setValue(DatePicker.date, forKey: "date")
             item.setValue(CategoryPicker.selectedRow(inComponent: 0), forKeyPath: "category")
-            item.setValue(Int(PriorityStepper.value), forKeyPath: "priority")
+            item.setValue(Int(Score), forKeyPath: "priority")
             do {
                 try context.save()
             } catch let error as NSError {
@@ -59,16 +66,13 @@ class AddVC: UIViewController {
         }
     }
     
-    @IBAction func OnPriorityStepper(_ sender: UIStepper) {
-        priority = Int(sender.value)
-    }
-    
     @IBAction func OnSave(_ sender: Any) {
         print("yeah2")
         if let title = ReminderTextField?.text,
            let description = ReminderDescriptionTextField?.text,
+           let score = PriorityValue?.text,
            let URL = URLTextField?.text{
-            saveItem(title: title, description: description, URL: URL)
+            saveItem(title: title, description: description, URL: URL, Score: score)
         }
         presentingViewController?.dismiss(animated: true)
     }

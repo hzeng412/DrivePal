@@ -9,35 +9,35 @@ import Foundation
 import UIKit
 
 enum CategoryType: Int, CaseIterable{
-    case Job, DailyLife, Study, Travel, Habit
+    case Excellent, Good, Average, Fair, Poor
     
     func getValue() -> String {
         switch self{
-        case .Job:
-            return "Job"
-        case .DailyLife:
-            return "DailyLife"
-        case .Study:
-            return "Study"
-        case .Travel:
-            return "Travel"
-        case .Habit:
-            return "Habit"
+        case .Excellent:
+            return "Excellent"
+        case .Good:
+            return "Good"
+        case .Average:
+            return "Average"
+        case .Fair:
+            return "Fair"
+        case .Poor:
+            return "Poor"
         }
     }
     
     func getImage() -> UIImage? {
         switch self{
-        case .Job:
-            return UIImage(named: "Job")
-        case .DailyLife:
-            return UIImage(named: "DailyLife")
-        case .Study:
-            return UIImage(named: "Study")
-        case .Travel:
-            return UIImage(named: "Travel")
-        case .Habit:
-            return UIImage(named: "Habit")
+        case .Excellent:
+            return UIImage(named: "report1")
+        case .Good:
+            return UIImage(named: "report1")
+        case .Average:
+            return UIImage(named: "report1")
+        case .Fair:
+            return UIImage(named: "report1")
+        case .Poor:
+            return UIImage(named: "report1")
         }
     }
 }

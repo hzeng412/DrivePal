@@ -1,0 +1,66 @@
+
+/* Class = "UILabel"; text = "CATEGORY"; ObjectID = "23U-um-Y0f"; */
+"23U-um-Y0f.text" = "CATEGORY";
+
+/* Class = "UILabel"; text = "⭑⭑⭑⭑⭑⭑⭑⭑⭑⭑"; ObjectID = "941-qm-ro2"; */
+"941-qm-ro2.text" = "⭑⭑⭑⭑⭑⭑⭑⭑⭑⭑";
+
+/* Class = "UILabel"; text = "REMINDER TITLE"; ObjectID = "AM0-eE-zQT"; */
+"AM0-eE-zQT.text" = "REMINDER TITLE";
+
+/* Class = "UIButton"; normalTitle = "✕"; ObjectID = "Ap2-Do-XNo"; */
+"Ap2-Do-XNo.normalTitle" = "✕";
+
+/* Class = "UILabel"; text = "5 different table VC, UIAnimation, and storyboard segue, and primary and secondary color"; ObjectID = "C1D-Yd-K7r"; */
+"C1D-Yd-K7r.text" = "5 different table VC, UIAnimation, and storyboard segue, and primary and secondary color";
+
+/* Class = "UILabel"; text = "DATE"; ObjectID = "C6T-uH-IZN"; */
+"C6T-uH-IZN.text" = "DATE";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "K1Y-yV-6jI"; */
+"K1Y-yV-6jI.normalTitle" = "Cancel";
+
+/* Class = "UILabel"; text = "SORT BY PRIORITY"; ObjectID = "KyG-NP-ZfG"; */
+"KyG-NP-ZfG.text" = "SORT BY PRIORITY";
+
+/* Class = "UILabel"; text = "URL NOTE"; ObjectID = "WNz-Dj-Ofu"; */
+"WNz-Dj-Ofu.text" = "URL NOTE";
+
+/* Class = "UILabel"; text = "CSC214 Project3 Due"; ObjectID = "Yfw-1c-9GR"; */
+"Yfw-1c-9GR.text" = "CSC214 Project3 Due";
+
+/* Class = "UILabel"; text = "⭑⭑⭑⭑⭑⭑⭑⭑⭑⭑"; ObjectID = "aId-ME-7fe"; */
+"aId-ME-7fe.text" = "⭑⭑⭑⭑⭑⭑⭑⭑⭑⭑";
+
+/* Class = "UILabel"; text = "12/29/2020 Tuesday 11.59 p.m"; ObjectID = "do8-Dd-a9M"; */
+"do8-Dd-a9M.text" = "12/29/2020 Tuesday 11.59 p.m";
+
+/* Class = "UILabel"; text = "LINK"; ObjectID = "e4k-Up-T2G"; */
+"e4k-Up-T2G.text" = "LINK";
+
+/* Class = "UIButton"; normalTitle = "https://www.baidu.com"; ObjectID = "eEW-Vj-a5a"; */
+"eEW-Vj-a5a.normalTitle" = "https://www.baidu.com";
+
+/* Class = "UILabel"; text = "1"; ObjectID = "eyZ-ft-P1V"; */
+"eyZ-ft-P1V.text" = "1";
+
+/* Class = "UILabel"; text = "GROUP BY CATEGORY"; ObjectID = "gPS-6v-jz2"; */
+"gPS-6v-jz2.text" = "GROUP BY CATEGORY";
+
+/* Class = "UILabel"; text = "Urgency"; ObjectID = "hFl-cN-75k"; */
+"hFl-cN-75k.text" = "Urgency";
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "hH8-w4-52G"; */
+"hH8-w4-52G.normalTitle" = "Save";
+
+/* Class = "UILabel"; text = "TIME"; ObjectID = "k3H-ru-5da"; */
+"k3H-ru-5da.text" = "TIME";
+
+/* Class = "UILabel"; text = "REMINDER TITLE"; ObjectID = "lxx-lY-YGQ"; */
+"lxx-lY-YGQ.text" = "REMINDER TITLE";
+
+/* Class = "UILabel"; text = "REMINDER DESCRIPTION"; ObjectID = "qfs-IV-IAQ"; */
+"qfs-IV-IAQ.text" = "REMINDER DESCRIPTION";
+
+/* Class = "UILabel"; text = "URGENCY"; ObjectID = "uio-p0-ifc"; */
+"uio-p0-ifc.text" = "URGENCY";

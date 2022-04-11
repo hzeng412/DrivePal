@@ -1,0 +1,48 @@
+/* 
+  Localizable.strings
+  Reminder
+
+  Created by bari on 2021/12/4.
+  
+*/
+//AddVC
+"str_AddVCTitle" = "提醒名称";
+"str_AddVCDescription" = "提醒描述";
+"str_AddVCDate" = "日期";
+"str_AddVCCategory" = "类别";
+"str_AddVCUrgency" = "紧急程度";
+"str_AddVCURL" = "链接";
+"str_AddVCCancel" = "取消";
+"str_AddVCSave" = "保存";
+// TableVC
+"str_deleteMessage" = "你确定要删除这个提醒吗?";
+"str_warning" = "警告";
+"str_delete" = "删除";
+"str_cancel" = "取消";
+"str_timeZoneNotifyMessage" = "请注意，你在不同的时区。截止日期也会随之改变.";
+"str_timeZoneNotifyTitle" = "时区改变通知";
+//SettingVC
+"str_GroupByCategory" = "类别分组";
+"str_SortByUrgency" = "紧急程度排序";
+//DetailVC
+"str_DetailVCUrgency" = "得分";
+"str_DetailVCLink" = "链接";
+"str_DetailVCWarning" = "警告";
+"str_DetailVCWrongLink" = "错误链接";
+"str_DetailVCCancel" = "取消";
+"str_DetailVCBlankURL" = "空白链接";
+// Calendar
+"str_Jan" = "一月";
+"str_Feb" = "二月";
+"str_Mar" = "三月";
+"str_Apr" = "四月";
+"str_May" = "五月";
+"str_Jun" = "六月";
+"str_Jul" = "七月";
+"str_Aug" = "八月";
+"str_Sep" = "九月";
+"str_Oct" = "十月";
+"str_Nov" = "十一月";
+"str_Dec" = "十二月";
+
+

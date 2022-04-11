@@ -13,9 +13,15 @@
 		4118A44C2758212C0075E5EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4118A44A2758212C0075E5EE /* Main.storyboard */; };
 		4118A4512758212E0075E5EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4118A4502758212E0075E5EE /* Assets.xcassets */; };
 		4118A4542758212E0075E5EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4118A4522758212E0075E5EE /* LaunchScreen.storyboard */; };
+		412939A0275BF19D009BCEED /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4129399F275BF19D009BCEED /* SettingVC.swift */; };
+		412939A3275C6802009BCEED /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 412939A5275C6802009BCEED /* Localizable.strings */; };
+		412939AA275D6113009BCEED /* DateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412939A9275D6113009BCEED /* DateButton.swift */; };
+		412939AC275D6137009BCEED /* CalendarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412939AB275D6137009BCEED /* CalendarHelper.swift */; };
+		412939AE275D61DB009BCEED /* CalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412939AD275D61DB009BCEED /* CalendarVC.swift */; };
 		4146EAB8275AAAE300C0B3D8 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4146EAB7275AAAE300C0B3D8 /* DetailVC.swift */; };
 		414B753B275AB33D00318A58 /* ReminderInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414B753A275AB33D00318A58 /* ReminderInfo.swift */; };
 		414B753D275B223200318A58 /* WebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414B753C275B223200318A58 /* WebVC.swift */; };
+		4153151727FF75DE00E87E75 /* DataOnGoingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4153151627FF75DE00E87E75 /* DataOnGoingVC.swift */; };
 		4174496E275955B600D2B50B /* TableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4174496D275955B600D2B50B /* TableVC.swift */; };
 		41744970275955E200D2B50B /* AddVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4174496F275955E200D2B50B /* AddVC.swift */; };
 		417449722759566000D2B50B /* ReminderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417449712759566000D2B50B /* ReminderCell.swift */; };
@@ -32,9 +38,18 @@
 		4118A4502758212E0075E5EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4118A4532758212E0075E5EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4118A4552758212E0075E5EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4129399F275BF19D009BCEED /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
+		412939A4275C6802009BCEED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		412939A6275C680F009BCEED /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		412939A7275C680F009BCEED /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		412939A8275C680F009BCEED /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		412939A9275D6113009BCEED /* DateButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateButton.swift; sourceTree = "<group>"; };
+		412939AB275D6137009BCEED /* CalendarHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarHelper.swift; sourceTree = "<group>"; };
+		412939AD275D61DB009BCEED /* CalendarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarVC.swift; sourceTree = "<group>"; };
 		4146EAB7275AAAE300C0B3D8 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		414B753A275AB33D00318A58 /* ReminderInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderInfo.swift; sourceTree = "<group>"; };
 		414B753C275B223200318A58 /* WebVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebVC.swift; sourceTree = "<group>"; };
+		4153151627FF75DE00E87E75 /* DataOnGoingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataOnGoingVC.swift; sourceTree = "<group>"; };
 		4174496D275955B600D2B50B /* TableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableVC.swift; sourceTree = "<group>"; };
 		4174496F275955E200D2B50B /* AddVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVC.swift; sourceTree = "<group>"; };
 		417449712759566000D2B50B /* ReminderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderCell.swift; sourceTree = "<group>"; };
@@ -76,12 +91,12 @@
 			children = (
 				4118A4442758212C0075E5EE /* AppDelegate.swift */,
 				4118A4462758212C0075E5EE /* SceneDelegate.swift */,
-				4118A4482758212C0075E5EE /* ViewController.swift */,
 				4118A44A2758212C0075E5EE /* Main.storyboard */,
 				4118A4502758212E0075E5EE /* Assets.xcassets */,
 				4118A4522758212E0075E5EE /* LaunchScreen.storyboard */,
 				4118A4552758212E0075E5EE /* Info.plist */,
 				41744973275976D000D2B50B /* ReminderApp.xcdatamodeld */,
+				412939A5275C6802009BCEED /* Localizable.strings */,
 			);
 			path = Reminder;
 			sourceTree = "<group>";
@@ -92,8 +107,12 @@
 				4174496D275955B600D2B50B /* TableVC.swift */,
 				4174496F275955E200D2B50B /* AddVC.swift */,
 				417449712759566000D2B50B /* ReminderCell.swift */,
+				4129399F275BF19D009BCEED /* SettingVC.swift */,
 				4146EAB7275AAAE300C0B3D8 /* DetailVC.swift */,
 				414B753C275B223200318A58 /* WebVC.swift */,
+				412939AD275D61DB009BCEED /* CalendarVC.swift */,
+				4118A4482758212C0075E5EE /* ViewController.swift */,
+				4153151627FF75DE00E87E75 /* DataOnGoingVC.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -103,6 +122,8 @@
 			children = (
 				41744976275979EC00D2B50B /* CategoryType.swift */,
 				414B753A275AB33D00318A58 /* ReminderInfo.swift */,
+				412939A9275D6113009BCEED /* DateButton.swift */,
+				412939AB275D6137009BCEED /* CalendarHelper.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -148,6 +169,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 4118A4382758212C0075E5EE;
 			productRefGroup = 4118A4422758212C0075E5EE /* Products */;
@@ -165,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4118A4542758212E0075E5EE /* LaunchScreen.storyboard in Resources */,
+				412939A3275C6802009BCEED /* Localizable.strings in Resources */,
 				4118A4512758212E0075E5EE /* Assets.xcassets in Resources */,
 				4118A44C2758212C0075E5EE /* Main.storyboard in Resources */,
 			);
@@ -178,16 +201,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				4118A4492758212C0075E5EE /* ViewController.swift in Sources */,
+				412939A0275BF19D009BCEED /* SettingVC.swift in Sources */,
+				4153151727FF75DE00E87E75 /* DataOnGoingVC.swift in Sources */,
 				4118A4452758212C0075E5EE /* AppDelegate.swift in Sources */,
 				417449722759566000D2B50B /* ReminderCell.swift in Sources */,
 				41744975275976D000D2B50B /* ReminderApp.xcdatamodeld in Sources */,
+				412939AE275D61DB009BCEED /* CalendarVC.swift in Sources */,
 				4174496E275955B600D2B50B /* TableVC.swift in Sources */,
 				4146EAB8275AAAE300C0B3D8 /* DetailVC.swift in Sources */,
 				41744977275979EC00D2B50B /* CategoryType.swift in Sources */,
 				414B753B275AB33D00318A58 /* ReminderInfo.swift in Sources */,
 				4118A4472758212C0075E5EE /* SceneDelegate.swift in Sources */,
 				41744970275955E200D2B50B /* AddVC.swift in Sources */,
+				412939AA275D6113009BCEED /* DateButton.swift in Sources */,
 				414B753D275B223200318A58 /* WebVC.swift in Sources */,
+				412939AC275D6137009BCEED /* CalendarHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +226,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				4118A44B2758212C0075E5EE /* Base */,
+				412939A6275C680F009BCEED /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -206,8 +235,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				4118A4532758212E0075E5EE /* Base */,
+				412939A7275C680F009BCEED /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		412939A5275C6802009BCEED /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				412939A4275C6802009BCEED /* en */,
+				412939A8275C680F009BCEED /* zh-Hans */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -217,6 +256,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -278,6 +318,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -335,12 +376,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QRTU797HD8;
 				INFOPLIST_FILE = Reminder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zxie13.Reminder;
+				PRODUCT_BUNDLE_IDENTIFIER = zxie13.Reminder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -353,12 +395,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QRTU797HD8;
 				INFOPLIST_FILE = Reminder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zxie13.Reminder;
+				PRODUCT_BUNDLE_IDENTIFIER = zxie13.Reminder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

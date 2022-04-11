@@ -1,0 +1,48 @@
+/* 
+  Localizable.strings
+  Reminder
+
+  Created by bari on 2021/12/4.
+  
+*/
+//AddVC
+"str_AddVCTitle" = "REPORT TITLE";
+"str_AddVCDescription" = "REPORT DETAILED DESCRIPTION";
+"str_AddVCDate" = "DATE";
+"str_AddVCCategory" = "CATEGORY";
+"str_AddVCUrgency" = "SCORE";
+"str_AddVCURL" = "URL NOTE";
+"str_AddVCCancel" = "Cancel";
+"str_AddVCSave" = "Save";
+//TableVC
+"str_deleteMessage" = "Are you sure you want to delete this reminder?";
+"str_warning" = "Warning";
+"str_delete" = "Delete";
+"str_cancel" = "Cancel";
+"str_timeZoneNotifyMessage" = "Please note that you are in a different time zone and deadline might change as well.";
+"str_timeZoneNotifyTitle" = "Time Zone Change Notification";
+//SettingVC
+"str_GroupByCategory" = "GROUP BY CATEGORY";
+"str_SortByUrgency" = "SORT BY URGENCY";
+//DetailVC
+"str_DetailVCUrgency" = "SCORE";
+"str_DetailVCLink" = "LINK";
+"str_DetailVCWarning" = "Warning";
+"str_DetailVCWrongLink" = "Wrong Link";
+"str_DetailVCCancel" = "Cancel";
+"str_DetailVCBlankURL" = "Blank URL";
+//Calendar
+"str_Jan" = "January";
+"str_Feb" = "February";
+"str_Mar" = "March";
+"str_Apr" = "April";
+"str_May" = "May";
+"str_Jun" = "June";
+"str_Jul" = "July";
+"str_Aug" = "August";
+"str_Sep" = "September";
+"str_Oct" = "October";
+"str_Nov" = "November";
+"str_Dec" = "December";
+
+

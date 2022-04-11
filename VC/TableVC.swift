@@ -8,7 +8,7 @@
 import UIKit
 import CoreData
 
-class TableVC: UITableViewController, DetailVCDelegate {
+class TableVC: UITableViewController, DetailVCDelegate, SettingVCDelegate {
     func deleteApp(data: ReminderInfo) {
     
         if let item = ReminderList[data.indexRow!.row] as? Reminder {
@@ -28,25 +28,23 @@ class TableVC: UITableViewController, DetailVCDelegate {
     
     
     var ReminderList: [NSManagedObject] = []
+    var TableVCGroupByCategory = false
+    var TableVCSortByPriority = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
         readData()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        NotificationCenter.default.addObserver(self, selector: #selector(self.timezoneNotification), name: Notification.Name.NSSystemTimeZoneDidChange, object: nil)
+        self.navigationController?.isNavigationBarHidden = false
     }
     
     func deletionAlert(title: String, completion: @escaping (UIAlertAction) -> Void) {
         
-        let alertMsg = "Are you sure you want to delete \(title)?"
-        let alert = UIAlertController(title: "Warning", message: alertMsg, preferredStyle: .actionSheet)
+        let alertMsg = NSLocalizedString("str_deleteMessage", comment: "")
+        let alert = UIAlertController(title:  NSLocalizedString("str_warning", comment: ""), message: alertMsg, preferredStyle: .actionSheet)
         
-        let deleteAction = UIAlertAction(title: "Delete", style: .destructive, handler: completion)
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler:nil)
+        let deleteAction = UIAlertAction(title: NSLocalizedString("str_delete", comment: ""), style: .destructive, handler: completion)
+        let cancelAction = UIAlertAction(title: NSLocalizedString("str_cancel", comment: ""), style: .cancel, handler:nil)
         
         alert.addAction(cancelAction)
         alert.addAction(deleteAction)
@@ -97,7 +95,7 @@ class TableVC: UITableViewController, DetailVCDelegate {
         
         let selectedCell = ReminderList[indexPath.row]
         let reminderinfo = ReminderInfo()
-        reminderinfo.title = selectedCell.value(forKey: "title") as? String
+        reminderinfo.title = "Trip Summary" as? String
         reminderinfo.describe = selectedCell.value(forKey: "describe") as? String
         reminderinfo.date = selectedCell.value(forKey: "date") as? Date
         reminderinfo.priority = selectedCell.value(forKey: "priority") as? Int
@@ -115,6 +113,13 @@ class TableVC: UITableViewController, DetailVCDelegate {
             vc?.reminderInfo = sender as? ReminderInfo
             vc?.delegate = self
         }
+        if segue.destination is SettingVC {
+            let vc = segue.destination as? SettingVC
+            vc?.GroupByCategory = self.TableVCGroupByCategory
+            vc?.SortByPriority = self.TableVCSortByPriority
+            vc?.delegate = self
+        }
+        
     }
     
     func deleteItem(item: Reminder) {
@@ -145,6 +150,63 @@ class TableVC: UITableViewController, DetailVCDelegate {
         readData()
         tableView.reloadData()
     }
+    
+    @objc func timezoneNotification() {
+        let message = NSLocalizedString("str_timeZoneNotifyMessage", comment: "")
+        let alert = UIAlertController(title: NSLocalizedString("str_timeZoneNotifyTitle", comment: ""), message: message, preferredStyle: .alert)
+        let ok = UIAlertAction(title: NSLocalizedString("str_OK", comment: ""), style: .cancel)
+        alert.addAction(ok)
+        present(alert, animated: true)
+    }
+    
+    @IBAction func HozGesture(_ sender: UISwipeGestureRecognizer) {
+        switch sender.direction {
+        case .right:
+            performSegue(withIdentifier: "ToSetting", sender: self)
+        default:
+            break
+        }
+    }
+    
+    func SortByPriority() {
+        let context = AppDelegate.cdContext
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Reminder")
+        let sort = NSSortDescriptor(key: "priority", ascending: false)
+        fetchRequest.sortDescriptors = [sort]
+        do {
+            ReminderList = try context.fetch(fetchRequest)
+        } catch let error as NSError {
+            print("Could not fetch requested item. \(error), \(error.userInfo)")
+        }
+        TableVCSortByPriority = true
+        TableVCGroupByCategory = false
+        tableView.reloadData()
+    }
+    
+    func GroupByCategory() {
+        let context = AppDelegate.cdContext
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Reminder")
+        let sort = NSSortDescriptor(key: "category", ascending: true)
+        fetchRequest.sortDescriptors = [sort]
+        do {
+            ReminderList = try context.fetch(fetchRequest)
+        } catch let error as NSError {
+            print("Could not fetch requested item. \(error), \(error.userInfo)")
+        }
+        TableVCGroupByCategory = true
+        TableVCSortByPriority = false
+        tableView.reloadData()
+    }
+    
+    func GroupByCategoryToTableview(){
+        GroupByCategory()
+    }
+    
+    func SortByPriorityToTableview(){
+        SortByPriority()
+    }
+
+    
 
     /*
     // Override to support conditional editing of the table view.
